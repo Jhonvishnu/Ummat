@@ -1,0 +1,290 @@
+.flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  nav.navbar{
+      box-shadow: 4px 5px 10px #00000085;
+  }
+h2:not(.profile h2) {
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+:root {
+  --brad: 1rem;
+}
+
+table {
+  width: 100%;
+}
+
+tbody {
+  width: 97%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+	margin-left:20px;
+
+}
+tr {
+  background: #8884;
+  border-radius: var(--brad);
+  display: inline-flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 7em;
+  overflow: hidden;
+  padding: 0.5em;
+  position: relative;
+  width: calc(25% - 1rem);
+}
+td,
+th {
+  line-height: 1.25;
+  padding: 0;
+}
+tbody > tr:first-child {
+  display: none;
+}
+
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+
+.btn-5 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(255,27,0);
+background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+}
+.btn-5:hover {
+  color: white;
+  background: transparent;
+   box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #5ee800e0;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.dashboard > * {
+  border-radius: var(--brad);
+  flex-grow: 1;
+}
+
+
+
+.profile p {
+  font-size: 1.25em;
+  font-weight: 700;
+  margin: 0;
+  opacity: 0.5;
+}
+.profile h2 {
+  background: linear-gradient(#004a84, #004b14);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(4px 4px #0002);
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+.schedule-table {
+  background: transparent;
+  order: 0;
+  padding: 0;
+  width: 70%;
+}
+.exercise-table tr > td:first-child {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+.exercise-table tbody > tr:nth-child(2) {
+  width: calc(50% + 2.5rem);
+}
+.schedule-table tr {
+  --s: 9em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: 0px 10px 16px -8px #000a;
+  display: grid;
+  flex-grow: 0;
+  height: 200px;
+  place-content: center;
+  text-align: center;
+  width: var(--s);
+  border-radius:10px;
+  flex-grow: 1;
+}
+
+tbody > tr {
+  --color: #000;
+  --p: 66%;
+  background-image: linear-gradient(45deg, #00000070, #0000), var(--img);
+  background-position: 10%;
+  background-size: cover;
+  box-shadow: 0px 8px 16px -8px #000a;
+  color: #fff;
+}
+tbody > tr:nth-child(2) {
+  --img: url(img/NikahForever.com_.png);
+ 
+	  background-position: bottom;
+}
+tbody > tr:nth-child(3) {
+  --img: url(img/Education.jpg);
+}
+tbody > tr:nth-child(4) {
+  --img: url(img/Travel.png);
+  background-position: bottom;
+}
+tbody > tr:nth-child(5) {
+  --img: url(img/Ecommerce.jpg);
+  background-position: center 70%;
+  background-size: cover;
+}
+tbody > tr:nth-child(6) {
+  --img: url(https://unsplash.com/photos/nA0UDNDbxys/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8N3x8V2VpZ2h0JTIwVHJhaW5pbmd8ZW58MHx8fHwxNjk5MzY2OTk5fDA&force=true&w=640);
+}
+
+@media (max-width: 1200px) {
+  .profile {
+    aspect-ratio: unset;
+    background: #8884;
+    width: 100%;
+  }
+ }
+@media (max-width: 700px) {
+  .profile {
+    aspect-ratio: unset;
+    background: #8884;
+    width: 100%;
+  }
+}
+
+  #list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 15px;
+    width: 90%;
+    max-width: 100%; /* Corrected max-width value */
+    text-align: center;
+    margin: 20px;
+    padding: 0;
+    justify-items: center;
+}
+
+#list-container li {
+    width: 80px;
+    height: 80px;
+   display: block;
+    margin: 20px;
+    padding: 0;
+}
+.state-name h3{
+  padding-top:10px;   
+  font-style: oblique;
+  color: rgb(33, 34, 32);
+  text-shadow: rgb(247, 243, 235);
+  font-size: 11px;
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+
+.circle-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    box-shadow:
+        inset 0 0 0 5px rgba(255, 255, 255, 0.6),
+        0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+    background-size: cover;
+}
+
+.circle-img-1 {
+    /* background-image: url(images/Chennai_Central.jpg); */
+    background-size: cover;
+    padding: 0;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+#list-container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+
+#carouselExampleControls {
+    margin: 40px 0px;
+    
+  }
+  .carousel-item {
+    height: 390px;
+  }
+  .carousel-item img.d-block.w-100 {
+    height: 100%;
+  }

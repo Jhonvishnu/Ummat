@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Navbar Example</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+</head>
+<body>
+    <style>
+        .flex-column {
+          display: flex;
+          flex-direction: column;
+        }
+        nav.navbar{
+            box-shadow: 4px 5px 10px #00000085;
+        }
+      </style>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid justify-content-start">
+        <a class="navbar-brand flex-column" href="#">
+            <img src="img/life-removebg-preview.png" alt="Logo" style="height: 60px;">
+            <span class="font-weight-bold">Ummat Life</span>
+          </a>
+<div class="w-100">
+ <div class="d-flex justify-content-end mx-5 mb-4">    
+<a href="#" class="mx-5">Masjid Registration</a>
+<div class="mx-5">
+    <span>Help Line: <a href="tel:+7358415802">7358415802</a></span>
+</div>
+  </div> 
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdownMenuLink">
+                <a class="dropdown-item" href="#">Our Mohalla</a>
+                <a class="dropdown-item" href="#">Education</a>
+                <a class="dropdown-item" href="#">Sports</a>
+              </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact US</a>
+          </li>
+        </ul>
+        <!-- Profile Bar -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Your Name
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Settings</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
